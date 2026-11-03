@@ -50,12 +50,3 @@ The demo prints marginal AUROC, a conditional p-value, mixed-stratum counts, and
 | [`demo.py`](demo.py) | Independent samples and matched learners/randomizations |
 | [`tests/`](tests) | Balance and uninformative-stratum checks |
 
-## Possible use in surveillance research
-
-A future study could ask whether a surveillance-derived score retains signal within declared comparable groups. The weighting objective offers a way to train for that question. Epidemic time series require a separately justified temporal or geographic randomization scheme: these independent-unit examples do not supply one. Coarse bins do not automatically remove continuous confounding.
-
-## Release scope
-
-This is a **new reference implementation based on Equations 6–8 of the supplied manuscript**, prepared for code exploration. The original training grid, permutation banks, and 500-seed records were not recovered. This repository does not claim full paper reproduction or validated epidemic forecasting.
-
-Related work: [Predictive-gain audits](https://github.com/cenacchi2000/Predictive-Gain-Audits) · [Counterfactual fragility](https://github.com/cenacchi2000/Counterfactual-Fragility-Certificates)
